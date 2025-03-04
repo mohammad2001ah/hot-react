@@ -7,6 +7,7 @@ import Button from './componenet/Button';
 import Todos from './componenet/Todos';
 import { saveToLocalstorage,getFromLocalstorage } from './componenet/utils/storage';
 import './App.css';
+import Info from './componenet/info';
 
 function App() {
   const [Input_Value,set_Input_Value]=useState(" ");
@@ -26,6 +27,7 @@ function App() {
       <Input value={Input_Value} onChange={set_Input_Value}/>
       <Button text={"add to do"} onClick={Handel_Add}/>
       <Todos todos={todos}/>
+      <Info/>
     </div>
   );
 }
