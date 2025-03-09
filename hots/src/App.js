@@ -28,7 +28,7 @@ function App() {
       <Button text={"add to do"} onClick={Handel_Add}/>
       <Todos todos={todos}/>
       <Info/>
-    </div>
+    </div> 
   );
 }
 
